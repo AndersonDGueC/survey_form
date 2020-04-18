@@ -1,1 +1,83 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulario</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <main>
+        <header>
+            <h1 id="title">Formulario de Inscripción</h1>
+            <p id="description">Acontinuacion se presenta
+                 los requisitos de información para su postulación
+            </p>
+        </header> 
+        <section>
+        <form id="survey-form">
+            <article>
+            <label for="name" id="name-label">Nombre</label>
+            <input type="text" name="nombre" id="name" placeholder="Ingrese su nombre"/>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="correo" id="email" placeholder="Ingrese su correo" required/>
+            <label for="number" id="number-label">Edad</label>
+            <input type="number" name="edad" id="number" min="12" max="60" placeholder="Ingrese su edad"/>
+            </article>
+            <article>
+            <p>¿Cuál característica considera que lo describe</p>
+            <select id="dropdown" required>
+                <option disabled selected value>Seleccione una opción</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trabajador">Trabajador</option>
+                <option value="autodidacta">autodidacta</option>
+                <option value="empresario">Empresario</option>
+            </select>
+            </article>
+            <article>
+                <p>Indique el valor que más lo define</p>
+                <label>
+                    <input type="radio" checked name="opcion" value="tolerancia"/>
+                Tolerancia
+                </label>
+                <label>
+                    <input type="radio" name="opcion" value="respeto"/>
+                Respeto
+                </label>
+                <label>
+                    <input type="radio" name="opcion" value="honestidad"/>
+                 Honestidad   
+                </label>
+                <label>
+                    <input type="radio" name="opcion" value="ninguna"/>
+                 Ninguna   
+                </label>            
+            </article>  
+            <article>
+                <p>¿Cuál de los platos es o son sus favoritos? </p>
+                <span>(selecciones los que mas lo identifique)</span>
+                <label>
+                    <input type="checkbox" value="pollo" name="opcion2"/>
+                    Pollo
+                </label>
+                <label>
+                    <input type="checkbox" value="pescado" name="opcion2"/>
+                    Pescado
+                </label>
+                <label>
+                    <input type="checkbox" value="cerdo" name="opcion2"/>
+                    Cerdo
+                </label>       
+            </article>  
+            <article>
+                <p>Cuentanos algo sobre ti</p>
+                <textarea id="additional comments" placeholder="ingresa tu descripción...">
+                 </textarea>
+            </article>
+            <article>
+                <button id="submit">Eniviar</button>
+            </article>        
+        </form>
+        </section>
+        </main>   
+    </body>
+</html>
