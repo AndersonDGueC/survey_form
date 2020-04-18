@@ -17,15 +17,15 @@
         <form id="survey-form">
             <article>
             <label for="name" id="name-label">Nombre</label>
-            <input type="text" name="nombre" id="name" placeholder="Ingrese su nombre"/>
+            <input type="text" name="nombre" id="name" class="control_bloque" placeholder="Ingrese su nombre"/>
             <label for="email" id="email-label">Email</label>
-            <input type="email" name="correo" id="email" placeholder="Ingrese su correo" required/>
+            <input type="email" name="correo" id="email" class="control_bloque" placeholder="Ingrese su correo" required/>
             <label for="number" id="number-label">Edad</label>
-            <input type="number" name="edad" id="number" min="12" max="60" placeholder="Ingrese su edad"/>
+            <input type="number" name="edad" id="number" min="12" max="60" class="control_bloque" placeholder="Ingrese su edad"/>
             </article>
             <article>
             <p>¿Cuál característica considera que lo describe</p>
-            <select id="dropdown" required>
+            <select id="dropdown" class="control_bloque" required>
                 <option disabled selected value>Seleccione una opción</option>
                 <option value="estudiante">Estudiante</option>
                 <option value="trabajador">Trabajador</option>
@@ -36,7 +36,7 @@
             <article>
                 <p>Indique el valor que más lo define</p>
                 <label>
-                    <input type="radio" checked name="opcion" value="tolerancia"/>
+                    <input type="radio"  checked name="opcion" value="tolerancia"/>
                 Tolerancia
                 </label>
                 <label>
@@ -53,8 +53,10 @@
                 </label>            
             </article>  
             <article>
-                <p>¿Cuál de los platos es o son sus favoritos? </p>
-                <span>(selecciones los que mas lo identifique)</span>
+                <p>¿Cuál de los platos es o son sus favoritos?<br>
+                    <span>(selecciones los que mas lo identifique)</span>    
+                </p>
+                
                 <label>
                     <input type="checkbox" value="pollo" name="opcion2"/>
                     Pollo
@@ -70,11 +72,11 @@
             </article>  
             <article>
                 <p>Cuentanos algo sobre ti</p>
-                <textarea id="additional comments" placeholder="ingresa tu descripción...">
+                <textarea id="additional comments" class="control_bloque" placeholder="ingresa tu descripción...">
                  </textarea>
             </article>
             <article>
-                <button id="submit">Eniviar</button>
+                <button id="submit" class="control_bloque">Enviar</button>
             </article>        
         </form>
         </section>
